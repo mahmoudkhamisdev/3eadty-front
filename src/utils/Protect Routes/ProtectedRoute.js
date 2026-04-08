@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 const ProtectedRoute = () => {
-    const [users, setUsers] = useState(JSON.parse(localStorage.getItem('user')));
+    const [users] = useState(JSON.parse(localStorage.getItem('user')));
     const [isAdmin, setIsAdmin] = useState();
     const [isLogged, setIsLogged] = useState();
 

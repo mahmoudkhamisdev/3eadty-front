@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
-import { FaFemale, FaMale, FaWhatsappSquare } from "react-icons/fa";
+import { FaFemale, FaMale } from "react-icons/fa";
 import { TbUserEdit } from "react-icons/tb";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { PostData } from "../..//api/Axios/usePostData";
@@ -497,6 +497,7 @@ const PatientsDetails = ({ allAppointment }) => {
                     href={`https://wa.me/20${user.data?.phone}`}
                     className="m-0 flex items-center gap-x-1"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     {user.data.phone || "لا يوجد"}
                     <FaWhatsapp size={20} color="green" />
